@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Confere Aí: descubra o que é mito e o que é verdade sobre os animais.">
+  <title>Confere Aí | Mito ou Verdade?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="marca" href="#" aria-label="Confere Aí - página inicial">
+      <span class="marca-icone" aria-hidden="true">✓</span>
+      <span>Confere <span class="marca-destaque">Aí</span></span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <a href="#inicio" aria-current="page">Início</a>
+      <a href="#desafio">Desafio</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="apresentacao" aria-labelledby="titulo-principal">
+      <p class="etiqueta">MITO OU VERDADE?</p>
+      <h1 id="titulo-principal">Será que você sabe<br><span>o que é verdade?</span></h1>
+      <p class="introducao">Passe o mouse ou toque nos cartões para revelar curiosidades sobre o mundo animal.</p>
+      <a class="botao" href="#desafio">Começar a conferir <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="desafio" id="desafio" aria-labelledby="titulo-desafio">
+      <div class="secao-cabecalho">
+        <div>
+          <p class="etiqueta">TESTE SEUS CONHECIMENTOS</p>
+          <h2 id="titulo-desafio">Descubra a verdade</h2>
+        </div>
+        <p class="instrucao">Toque ou passe o mouse em um cartão.</p>
+      </div>
+
+      <div class="cartoes">
+        <article class="cartao" tabindex="0" role="button" aria-pressed="false" aria-label="Revelar resposta sobre pinguins">
+          <div class="cartao-inner">
+            <div class="face frente">
+              <img src="https://images.unsplash.com/photo-1551986782-d0169b3f8fa7?auto=format&fit=crop&w=900&q=85" alt="Pinguim em pé sobre o gelo">
+              <div class="texto-cartao">
+                <span class="selo mito">MITO?</span>
+                <h3>Pinguins conseguem voar como outros pássaros!</h3>
+                <span class="dica">Revele a resposta ↗</span>
+              </div>
+            </div>
+            <div class="face verso">
+              <span class="selo verdade">É VERDADE!</span>
+              <div class="emoji" aria-hidden="true">🐧</div>
+              <h3>Pinguins não voam, mas são excelentes nadadores.</h3>
+              <p>As asas funcionam como nadadeiras, ajudando-os a se mover com agilidade na água.</p>
+              <span class="dica">Toque para voltar ↻</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="cartao" tabindex="0" role="button" aria-pressed="false" aria-label="Revelar resposta sobre elefantes">
+          <div class="cartao-inner">
+            <div class="face frente">
+              <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?auto=format&fit=crop&w=900&q=85" alt="Elefante caminhando na natureza">
+              <div class="texto-cartao">
+                <span class="selo mito">MITO?</span>
+                <h3>Elefantes nunca esquecem nada!</h3>
+                <span class="dica">Revele a resposta ↗</span>
+              </div>
+            </div>
+            <div class="face verso">
+              <span class="selo verdade">É MITO!</span>
+              <div class="emoji" aria-hidden="true">🐘</div>
+              <h3>Elefantes têm ótima memória, mas não lembram de tudo.</h3>
+              <p>Eles conseguem reconhecer caminhos, lugares e outros elefantes por muito tempo.</p>
+              <span class="dica">Toque para voltar ↻</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="cartao" tabindex="0" role="button" aria-pressed="false" aria-label="Revelar resposta sobre polvos">
+          <div class="cartao-inner">
+            <div class="face frente">
+              <img src="https://images.unsplash.com/photo-1545670723-196ed0954986?auto=format&fit=crop&w=900&q=85" alt="Polvo no fundo do mar">
+              <div class="texto-cartao">
+                <span class="selo mito">MITO?</span>
+                <h3>Polvos têm três corações!</h3>
+                <span class="dica">Revele a resposta ↗</span>
+              </div>
+            </div>
+            <div class="face verso">
+              <span class="selo verdade">É VERDADE!</span>
+              <div class="emoji" aria-hidden="true">🐙</div>
+              <h3>Polvos realmente possuem três corações.</h3>
+              <p>Dois bombeiam sangue para as brânquias e um envia sangue para o resto do corpo.</p>
+              <span class="dica">Toque para voltar ↻</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <span class="sobre-icone" aria-hidden="true">💡</span>
+      <div>
+        <h2>Curiosidade é o primeiro passo!</h2>
+        <p>Confira as informações, questione o que parece estranho e continue aprendendo. Nem tudo que parece verdade é fato!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Confere Aí</strong> · Projeto educativo</p>
+    <p>Projeto feito por <strong>[Seu Nome]</strong></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
